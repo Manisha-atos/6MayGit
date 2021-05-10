@@ -77,9 +77,42 @@ Step1
 
 To download the Git installer, visit the Git's official site and go to download page. The link for the download page is https://git-scm.com/downloads
 
+.git folder
+
+object---
+git show -s --pretty=rqw <commit id> 5digit
+git ls-tree <tree id> 5digit 
+git show <>
+
+
+Dell@Admin MINGW64 /g/2021/May2021/GIT 6May/Demos (master)
+$ git show -s --pretty=raw 7de93
+commit 7de93903cab91cda35111ab79c21abc360e3c0d8
+tree 1c26150cad361a490a0d70e39b31eb470a90fc66
+author Manisha Mane <pimplemp@rediffmail.com> 1620286287 +0530
+committer Manisha Mane <pimplemp@rediffmail.com> 1620286287 +0530
+
+    First Commit
+
+Dell@Admin MINGW64 /g/2021/May2021/GIT 6May/Demos (master)
+$ git ls-tree 1c265
+fatal: Not a valid object name 1c265
+
+Dell@Admin MINGW64 /g/2021/May2021/GIT 6May/Demos (master)
+$ git ls-tree 1c261
+100644 blob 13ff9bc2cbf4ac9a423427d54079df75cef6fc5d    MyDemo1.txt
+
+Dell@Admin MINGW64 /g/2021/May2021/GIT 6May/Demos (master)
+$ git show 13ff9
+apple
+mango
+banana
 
 ====================================
 Git Commands
+start .--->open the file explorer
+code .--->open vs code
+notepad test.txt
 
 git --version
 
